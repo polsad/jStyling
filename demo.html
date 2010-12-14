@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/jstyling.css" />
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="css/ie7Fixes.css" />
+        <![endif]-->
+        <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.jstyling.pack.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $.jStyling({'fileButtonText': 'Browse file'})
+                $.jStyling.createSelect($('select[name=select]'));
+                $.jStyling.createCheckbox($('input[type=checkbox]'));
+                $.jStyling.createRadio($('input[type=radio]'));
+                $.jStyling.createFileInput($('input[type=file]'));
+            });
+        </script>
+    </head>
+    <body>
+              <div class="example">
+            <select name="select">
+                <option value="1">Option 1</option>
+                <option value="2" disabled="true">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            </div>
+            
+        <div class="example">
+            <label>
+                <input type="checkbox" name="checkbox[1]" disabled="true" /> первый
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox[2]" checked="true" disabled="true" /> второй
+            </label>
+            <label>
+                <input type="checkbox" name="checkbox[3]" checked="true" /> третий
+            </label>
+        </div> 
+      
+        <div class="example">
+            <label>
+                <input type="radio" name="radio" disabled="true" /> первая
+            </label>
+            <label>
+                <input type="radio" name="radio" checked="true" /> вторая
+            </label>
+            <label>
+                <input type="radio" name="radio" /> третья
+            </label>
+        </div>  
+     
+        <div class="example">
+            <input type="file" id="file" name="file" size="30" />
+            
+        </div>
+    </body>
+</html>

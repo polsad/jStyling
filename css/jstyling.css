@@ -1,0 +1,55 @@
+/**
+ * Customize at your own risk
+ */ 
+.jstyling-select {margin: 0; padding: 0; position:relative; z-index: 0;} 
+.jstyling-select-t {white-space: nowrap; overflow: hidden;}
+.jstyling-select-l {margin: 0; padding: 0; width: 100%; display: none; position: absolute; overflow-y: auto; z-index: 1000;}
+    .jstyling-select-l div {list-style: none; display: block; white-space: nowrap; overflow: hidden;}
+    .jstyling-select-l div:hover {}
+    .jstyling-select-l div.disabled {}
+    .jstyling-select-l div.disabled:hover {}
+.jstyling-select.active {z-index: 700; }    
+    .jstyling-select.active .jstyling-select-l {display: block;}
+.jstyling-checkbox, .jstyling-radio {margin: 0; padding: 0; display: inline-block; z-index: 1;}
+.jstyling-checkbox input[type=checkbox], .jstyling-radio input[type=radio] {opacity: 0; filter: alpha(opacity = 0); z-index: 0;}
+
+.jstyling-file {margin: 0; padding: 0;  display: inline-block; position: relative}
+.jstyling-file-f {overflow: hidden; white-space:nowrap;}
+.jstyling-file-b {position: relative; overflow: hidden}
+.jstyling-file input[type=file] {margin: 0; padding: 0; opacity: 0; filter: alpha(opacity = 0); z-index: 1; position: absolute; top: 0; right: 0;}
+
+/**
+ * This you can customize
+ */
+ 
+/* Select wrapper */ 
+.jstyling-select {width: 240px; border:1px solid #000000; cursor: pointer;}
+/* Select current option */
+.jstyling-select-s {padding: 2px; height: 22px; line-height: 22px; background: url(../images/jcusel-select.png) no-repeat top right;}
+.jstyling-select-t {width: 202px;} 
+
+/* Select options list*/
+.jstyling-select-l {max-height: 124px; background: #FFFFFF; border: 1px solid #000000; border-top: 0; top: 27px; left: -1px;} 
+    .jstyling-select-l div {height: 20px; border-top: 1px dotted #cccccc; padding: 2px;} 
+    .jstyling-select-l div:hover {background: #eeeeee;}
+    .jstyling-select-l div.disabled {background: #E5E5E5;}
+    .jstyling-select-l div.disabled:hover {color: #000000;}
+    .jstyling-select-l div:first-child {border-top: 0}
+.jstyling-select.active {background-position: 100% -28px;}
+.jstyling-select.disabled {background-color: #E5E5E5;}
+
+/* Checkbox */
+.jstyling-checkbox {width: 16px; height: 16px;  background: url(../images/jcusel-checkbox-radio.png) no-repeat;  vertical-align: middle;}
+.jstyling-checkbox.active {background-position: 100% -16px;}
+.jstyling-checkbox.disabled {background-position: 100% -32px;}
+.jstyling-checkbox.active.disabled {background-position: 100% -48px;}
+
+/* Radio button */
+.jstyling-radio {width: 16px; height: 16px;  background: url(../images/jcusel-checkbox-radio.png) no-repeat; background-position: 100% -64px;  vertical-align: middle;}
+.jstyling-radio.active {background-position: 100% -80px;}
+.jstyling-radio.disabled {background-position: 100% -96px;}
+.jstyling-radio.active.disabled {background-position: 100% -112px;}
+
+/* File input */     
+.jstyling-file-f {padding: 2px 2px; width: 200px; float: left; border: 1px solid #ccc;  height: 20px;}
+.jstyling-file-b {margin-left: 4px; padding: 2px 2px; width: 80px; float: left; border: 1px solid #ccc; height: 20px; background: #eee; text-align: center;}
